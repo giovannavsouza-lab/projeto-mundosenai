@@ -1,13 +1,27 @@
 function abrirLivro(){
-    document.getElementById("tela-capa").style.display = "none";
-    document.getElementById("tela-principal").style.display = "block";
+    document.getElementById("tela-principal").style.display = "block"; 
+    document.getElementById("tela-menu").style.display = "none";
 }
 
+function abrirMenu(){
+    document.getElementById("tela-menu").style.display = "block";
+    document.getElementById("tela-capa").style.display = "none";
+}
+
+
+function voltarMenu(){
+    document.getElementById("tela-principal").style.display = "none";
+    document.getElementById("tela-capa").style.display = "none";
+    document.getElementById("tela-menu").style.display = "flex";
+
+    const botoes = document.querySelectorAll(".btn-conto");
+    botoes.forEach(b => b.classList.remove("active"));
+}
 
 function voltarInicio(){
     document.getElementById("tela-principal").style.display = "none";
     document.getElementById("tela-capa").style.display = "flex";
-
+    document.getElementById("tela-menu").style.display = "none";
 
     const botoes = document.querySelectorAll(".btn-conto");
     botoes.forEach(b => b.classList.remove("active"));

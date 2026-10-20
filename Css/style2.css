@@ -38,6 +38,22 @@ body{
 }
 
 
+.capa-menu{
+    background-color: #5c1418;
+    padding: 50px 40px;
+    border-radius: 10px;
+    border: 5px double #d4af37;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.9);
+    text-align: center;
+    max-width: 450px;
+    width: 100%;
+    box-sizing:border-box;
+    transition: all 0.5sease;
+   }
+
+
+
+
 .capa-container{
 display: flex;
 justify-content: center;
@@ -48,6 +64,17 @@ box-sizing: border-box;
 
 
 }
+
+.menu-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    
+    
+    }
 
 
 .container{

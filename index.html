@@ -5,23 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cabbin 17 - Mitos</title>
    
-    <link rel="stylesheet" href="/style/style2.css">
+    <link rel="stylesheet" href="/Css/style2.css">
 </head>
 <body>
    
-    <div id="tela-capa" class="capa-container" img src "">
+     <div id="tela-capa" class="capa-container" >  <!-- 1 tela : abre pro menu-->
         <div class="capa-livro">
             <h1>Cabbin 17</h1>
             <p>Mitos e lendas verdadeiramente impresionantes.</p>
-            <button class="btn-abrir" onclick="abrirLivro()">Abrir Livro</button>
+            <button class="btn-abriir" onclick="abrirMenu()">Abrir Menu</button>
         </div>
     </div>
 
+<div id="tela-menu" class="menu-container" style="display: none;">  <!-- 2 tela : abre pro livro -->
+    <div class="capa-menu">
+        <h1>Cabbin 17</h1>
+        <p>Escolha seu deus</p>
+        <button class="btn-abrir" onclick="abrirLivro()">Abrir Livro</button>
+    </div>
+</div>
 
-    <div id="tela-principal" class="container" style="display: none;">
+
+    <div id="tela-principal" class="container" style="display: none;">  <!-- 3 tela : é o livro -->
        
         <div class="topo-acoes">
-            <button class="btn-voltar" onclick="voltarInicio()">Voltar</button>
+            <button class="btn-voltar" onclick="voltarMenu()">Voltar</button>
+            <button class="btn-vooltar" onclick="voltarInicio()">X</button>
            
             <div class="seletor-casas">
                 <span>Sua benção:</span>
