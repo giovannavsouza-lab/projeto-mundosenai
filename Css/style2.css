@@ -63,16 +63,12 @@ body {
     margin: 0;
     height: 100vh;
     overflow: hidden;
-    background-color: #5c1418;
+    background-color: #ceebeb;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 
-/* =========================================================
-   AS TRÊS TELAS: cada uma é a imagem inteira.
-   Para cortar as bordas em vez de esticar, troque
-   "100% 100%" por "cover" (mas aí os botões podem sair do lugar).
-   ========================================================= */
+
 #tela-capa,
 #tela-menu,
 #tela-principal {
@@ -85,20 +81,18 @@ body {
     background-position: center;
 }
 
-#tela-capa { background-image: url("../img/inicio.png"); }
-#tela-menu { background-image: url("../img/escolha.png"); }
+#tela-capa { background-image: url("../imgs/inicio.png"); }
+#tela-menu { background-image: url("../imgs/escolha.png"); }
 
-/* O seletor .container.skin-... evita que os botõezinhos de cor
-   (que também têm a classe skin-...) recebam a imagem */
-.container.skin-apollo   { background-image: url("../img/apollo.png"); }
-.container.skin-athena   { background-image: url("../img/athena.png"); }
-.container.skin-hermes   { background-image: url("../img/hermes.png"); }
-.container.skin-afrodite { background-image: url("../img/afrodite.png"); }
+/* O seletor dos botõezinhos de cor*/
+.container.skin-apollo   { background-image: url("../imgs/skinspadrao/apollo.png"); }
+.container.skin-athena   { background-image: url("../imgs/skinspadrao/athena.png"); }
+.container.skin-hermes   { background-image: url("../imgs/skinspadrao/hermes.png"); }
+.container.skin-afrodite { background-image: url("../imgs/skinspadrao/afrodite.png"); }
 
 
 /* =========================================================
-   TELA 1: CAPA (inicio.png)
-   O título fica dentro da barra cinza do desenho
+   CAPA 
    ========================================================= */
 .capa-livro {
     position: absolute;
@@ -125,7 +119,7 @@ body {
 
 .btn-abrir {
     background-color: #d4af37;
-    color: #5c1418;
+    color: #ceebeb;
     border: none;
     padding: 15px 40px;
     font-size: 1.2rem;
@@ -138,12 +132,11 @@ body {
 }
 
 .btn-abrir:hover { transform: scale(1.05); }
-.btn-abrir:focus-visible { outline: 3px solid #5c1418; outline-offset: 3px; }
+.btn-abrir:focus-visible { outline: 3px solid #ceebeb; outline-offset: 3px; }
 
 
 /* =========================================================
-   TELA 2: MENU (escolha.png)
-   Os quatro cards do desenho viram botões invisíveis
+  MENU
    ========================================================= */
 .titulo-menu {
     position: absolute;
@@ -188,20 +181,17 @@ body {
 
 
 /* =========================================================
-   TELA 3: LIVRO (apollo / athena / hermes / afrodite .png)
-   Tudo posicionado em % por cima das áreas do desenho
+   LIVRO (apollo / athena / hermes / afrodite)
    ========================================================= */
 .container {
     color: var(--texto-principal);
 }
 
-/* o desenho já traz o nome do deus, então título e rodapé ficam escondidos */
 .container header,
 .container footer {
     display: none;
 }
 
-/* caixa grande do meio: o conto */
 .leitor-conto {
     position: absolute;
     left: 28%;
@@ -257,7 +247,7 @@ body {
 .btn-conto.active { border-color: var(--btn-texto); font-weight: bold; }
 .btn-conto:focus-visible { outline: 2px solid var(--btn-texto); }
 
-/* caixa pequena da direita, no topo: escolha da benção (skins) */
+/* caixa pequena da direita, no topo: escolha da skins */
 .seletor-casas {
     position: absolute;
     left: 85.8%;
