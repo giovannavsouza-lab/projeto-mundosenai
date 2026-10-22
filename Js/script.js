@@ -65,15 +65,6 @@ const contos = [
 ];
 
 
-function mudarDeus(nomeDaSkin) {
-    const container = document.getElementById("tela-principal");
-
-
-    container.className = "container";
-
-
-    container.classList.add(nomeDaSkin);
-}
 function carregarMenu() {
     const menuContainer = document.getElementById("menuContos");
     menuContainer.innerHTML = "";
@@ -99,8 +90,12 @@ function exibirConto(id, botaoSelecionado) {
 
 
         const notaDiv = document.getElementById("contoNota");
-        notaDiv.innerText = conto.nota;
-        notaDiv.style.display = "block";
+        if (conto.nota) {
+            notaDiv.innerText = conto.nota;
+            notaDiv.style.display = "block";
+        } else {
+            notaDiv.style.display = "none";
+        }
 
 
        
@@ -111,3 +106,8 @@ function exibirConto(id, botaoSelecionado) {
 }
 window.onload = carregarMenu;
 
+
+function escolherDeus(nomeDaSkin) {
+    mudarDeus(nomeDaSkin);
+    abrirLivro();
+}

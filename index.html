@@ -4,72 +4,72 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cabbin 17 - Mitos</title>
-   
-    <link rel="stylesheet" href="/Css/style2.css">
+
+    <link rel="stylesheet" href="css/style2.css">
 </head>
 <body>
-   
-     <div id="tela-capa" class="capa-container" >  <!-- 1 tela : abre pro menu-->
+
+    <!-- 1ª tela: capa (abre o menu) -->
+    <div id="tela-capa" class="capa-container">
         <div class="capa-livro">
             <h1>Cabbin 17</h1>
-            <p>Mitos e lendas verdadeiramente impresionantes.</p>
-            <button class="btn-abriir" onclick="abrirMenu()">Abrir Menu</button>
+            <p>Mitos e lendas verdadeiramente impressionantes.</p>
+            <button class="btn-abrir" onclick="abrirMenu()">Abrir Menu</button>
         </div>
     </div>
 
-<div id="tela-menu" class="menu-container" style="display: none;">  <!-- 2 tela : abre pro livro -->
-    <div class="capa-menu">
-        <h1>Cabbin 17</h1>
-        <p>Escolha seu deus</p>
-        <button class="btn-abrir" onclick="abrirLivro()">Abrir Livro</button>
+
+    <!-- 2ª tela: escolha do deus (cada card abre o livro já com a skin dele) -->
+    <div id="tela-menu" class="menu-container" style="display: none;">
+        <h1 class="titulo-menu">Escolha seu deus</h1>
+        <button class="btn-voltar btn-voltar-menu" onclick="voltarInicio()">Voltar</button>
+
+        <button class="card-deus card-apollo"   title="Apollo"   aria-label="Escolher Apollo"   onclick="escolherDeus('skin-apollo')"></button>
+        <button class="card-deus card-athena"   title="Athena"   aria-label="Escolher Athena"   onclick="escolherDeus('skin-athena')"></button>
+        <button class="card-deus card-hermes"   title="Hermes"   aria-label="Escolher Hermes"   onclick="escolherDeus('skin-hermes')"></button>
+        <button class="card-deus card-afrodite" title="Afrodite" aria-label="Escolher Afrodite" onclick="escolherDeus('skin-afrodite')"></button>
     </div>
-</div>
 
 
-    <div id="tela-principal" class="container" style="display: none;">  <!-- 3 tela : é o livro -->
-       
+    <!-- 3ª tela: o livro -->
+    <div id="tela-principal" class="container skin-apollo" style="display: none;">
+
         <div class="topo-acoes">
             <button class="btn-voltar" onclick="voltarMenu()">Voltar</button>
-            <button class="btn-voltar" onclick="voltarInicio()">X</button>
-           
+            <button class="btn-fechar" title="Fechar" aria-label="Fechar" onclick="voltarInicio()">X</button>
+
             <div class="seletor-casas">
                 <span>Sua benção:</span>
-                <button class="btn-skin skin-apollo" title="Apollo" onclick="mudarDeus('skin-apollo')"></button>
-                <button class="btn-skin skin-athena" title="Athena" onclick="mudarDeus('skin-athena')"></button>
-                <button class="btn-skin skin-hermes" title="Hermes" onclick="mudarDeus('skin-hermes')"></button>
+                <button class="btn-skin skin-apollo"   title="Apollo"   onclick="mudarDeus('skin-apollo')"></button>
+                <button class="btn-skin skin-athena"   title="Athena"   onclick="mudarDeus('skin-athena')"></button>
+                <button class="btn-skin skin-hermes"   title="Hermes"   onclick="mudarDeus('skin-hermes')"></button>
                 <button class="btn-skin skin-afrodite" title="Afrodite" onclick="mudarDeus('skin-afrodite')"></button>
             </div>
         </div>
 
-
+        <!-- header e footer ficam escondidos pelo CSS (a imagem já tem o título) -->
         <header>
             <h1 id="tituloPrincipal">Cabbin 17</h1>
             <p>Selecione um mito para iniciar a leitura</p>
         </header>
 
-
         <div class="main-content">
-           
             <div class="menu-contos" id="menuContos"></div>
-
 
             <div class="leitor-conto" id="leitorConto">
                 <h2 id="contoTitulo">Selecione uma história</h2>
                 <p id="contoTexto">Clique em um dos mitos ao lado para ler a sua história e biografia.</p>
-                <div id="contoNota" class="nota-alvo" style="display: none;"></div>
             </div>
-           
-        </div>
 
+            <div id="contoNota" class="nota-alvo" style="display: none;"></div>
+        </div>
 
         <footer>
             <p>Cabbin 17 • Acampamento Meio-Sangue</p>
         </footer>
 
-
     </div>
-   
-    <script src="js/script.js"></script>
-</body>  
-</html>
 
+    <script src="js/script.js"></script>
+</body>
+</html>
