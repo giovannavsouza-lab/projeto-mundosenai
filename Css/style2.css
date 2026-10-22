@@ -17,8 +17,8 @@
     --bg-leitor: #FFB280;
     --texto-principal: #3d2600;
     --texto-destaque: #ff9101;
-    --borda-ouro: #060606;
-    --btn-bg: #e0a96d;
+    --borda-ouro: #ffa600d5;
+    --btn-bg: #fde6b5;
     --btn-texto: #0c0c0c;
 }
 
@@ -27,9 +27,9 @@
     --bg-principal: #c5d2e0;
     --bg-leitor: #f4fbf7;
     --texto-principal: #041040;
-    --texto-destaque: #1a472a;
+    --texto-destaque: #00706b;
     --borda-ouro: #0b055e;
-    --btn-bg: #8bbfa3;
+    --btn-bg: #a1a4bd;
     --btn-texto: #0b2f1d;
 }
 
@@ -39,8 +39,8 @@
     --bg-leitor: #f4f8fb;
     --texto-principal: #0d2a13;
     --texto-destaque: #122b13;
-    --borda-ouro: #cd7f32;
-    --btn-bg: #90b3d6;
+    --borda-ouro: #256d1b;
+    --btn-bg: #90d69f;
     --btn-texto: #0d1b2a;
 }
 
@@ -50,8 +50,8 @@
     --bg-leitor: #fffdf2;
     --texto-principal: #410d41;
     --texto-destaque: #fe00dd;
-    --borda-ouro: #373737;
-    --btn-bg: #e8db7d;
+    --borda-ouro: #6e053a;
+    --btn-bg: #f7c7d9;
     --btn-texto: #1f1f1e;
 }
 
@@ -85,10 +85,10 @@ body {
 #tela-menu { background-image: url("../imgs/escolha.png"); }
 
 /* O seletor dos botõezinhos de cor*/
-.container.skin-apollo   { background-image: url("../imgs/skinspadrao/apollo.png"); }
-.container.skin-athena   { background-image: url("../imgs/skinspadrao/athena.png"); }
-.container.skin-hermes   { background-image: url("../imgs/skinspadrao/hermes.png"); }
-.container.skin-afrodite { background-image: url("../imgs/skinspadrao/afrodite.png"); }
+.container.skin-apollo   { background-image: url("../imgs/skinspadrao/skinapollo.png"); }
+.container.skin-athena   { background-image: url("../imgs/skinspadrao/skinatena.png"); }
+.container.skin-hermes   { background-image: url("../imgs/skinspadrao/skinhermes.png"); }
+.container.skin-afrodite { background-image: url("../imgs/skinspadrao/skinafrodite.png"); }
 
 
 /* =========================================================
@@ -247,7 +247,7 @@ body {
 .btn-conto.active { border-color: var(--btn-texto); font-weight: bold; }
 .btn-conto:focus-visible { outline: 2px solid var(--btn-texto); }
 
-/* caixa pequena da direita, no topo: escolha da skins */
+/* caixa pequena, escolha da skins */
 .seletor-casas {
     position: absolute;
     left: 85.8%;
@@ -276,22 +276,8 @@ body {
 .btn-skin:hover { transform: scale(1.12); }
 .btn-skin:focus-visible { outline: 2px solid var(--borda-ouro); outline-offset: 2px; }
 
-/* caixa da esquerda: nota (só aparece se o conto tiver "nota") */
-.nota-alvo {
-    position: absolute;
-    left: 6%;
-    top: 55%;
-    width: 15%;
-    height: 29%;
-    box-sizing: border-box;
-    padding: 4%;
-    overflow-y: auto;
-    color: var(--texto-principal);
-    line-height: 1.5;
-    font-size: clamp(0.75rem, 0.95vw, 0.95rem);
-}
 
-/* botão Voltar (livro -> menu) */
+/* botão Voltar (livro -> menu) segundo botão */
 .btn-voltar {
     background-color: rgba(255, 255, 255, 0.55);
     color: var(--texto-principal);
