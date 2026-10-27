@@ -107,7 +107,17 @@ function exibirConto(id, botaoSelecionado) {
 window.onload = carregarMenu;
 
 
-function escolherDeus(nomeDaSkin) {
+function escolherDeus(nomeDaSkin, contoId) {
     mudarDeus(nomeDaSkin);
     abrirLivro();
+
+    // Se um ID foi passado, carrega automaticamente a história e marca o botão
+    if (contoId !== undefined) {
+        const botoes = document.querySelectorAll(".btn-conto");
+        // Como os botões são criados na mesma ordem dos IDs (0, 1, 2, 3), 
+        // usamos o contoId para achar o botão correspondente
+        const botaoCorreto = botoes[contoId]; 
+        
+        exibirConto(contoId, botaoCorreto);
+    }
 }
