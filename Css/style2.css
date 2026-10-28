@@ -338,7 +338,7 @@ footer {
 .creditos {
     position: fixed; 
     right: 2%;    
-    top:65% ;   
+    top:94% ;   
     left:86% ;
     bottom: 2%;     
     font-size: clamp(0.65rem, 1vh, 0.85rem);
