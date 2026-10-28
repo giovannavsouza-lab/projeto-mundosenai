@@ -83,10 +83,10 @@ body {
 #tela-menu { background-image: url("../imgs/escolha.png"); }
 
 /* O seletor dos botõezinhos de cor*/
-.container.skin-apollo   { background-image: url("../imgs/skinspadrao/skinapollo.png"); }
-.container.skin-athena   { background-image: url("../imgs/skinspadrao/skinatena.png"); }
-.container.skin-hermes   { background-image: url("../imgs/skinspadrao/skinhermes.png"); }
-.container.skin-afrodite { background-image: url("../imgs/skinspadrao/skinafrodite.png"); }
+.container.skin-apollo   { background-image: url("../imgs/skinspadrao/skinpadrao.apollo.png"); }
+.container.skin-athena   { background-image: url("../imgs/skinspadrao/skinpadrao.athena.png"); }
+.container.skin-hermes   { background-image: url("../imgs/skinspadrao/skinpadrao.hermes.png"); }
+.container.skin-afrodite { background-image: url("../imgs/skinspadrao/skinpadrao.afrodite.png"); }
 
 
 /* =========================================================
@@ -191,7 +191,7 @@ body {
 }
 
 .container header,{
-    display:none
+    display:none 
 }
 
 .leitor-conto {
@@ -338,12 +338,63 @@ footer {
 
 .creditos {
     position: fixed; 
-    right: 2%;    
-    top:94% ;   
+    right: 1%;    
+    top:93% ;   
     left:86% ;
-    bottom: 2%;     
-    font-size: clamp(0.65rem, 1vh, 0.85rem);
+    bottom: 3%;     
+    font-size: 50%;
     font-style: italic;
     pointer-events: auto; /* Permite que o texto seja selecionável, se quiser */
 }
 
+.github {
+    position: fixed; 
+    right: 1%;    
+    top:95% ;   
+    left:86% ;
+    bottom: 3%;     
+    font-size: 50%;
+    font-style: italic;
+    pointer-events: auto; /* Permite que o texto seja selecionável, se quiser */
+}
+
+.btn-secreto {
+    position: absolute;
+    top: 10%;
+    left: 3%;
+    width: 45px;
+    height: 45px;
+    background-color: transparent; /* Deixa o fundo transparente */
+    border: none; /* Remove a linha da borda */
+    cursor: pointer;
+    z-index: 50;
+}
+
+.btn-secreto:hover {
+    transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Pop-up descendo do topo */
+.popup-secreto {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #5c0a0a;
+    color: #f4fbf7;
+    padding: 20px 40px;
+    border: 3px solid #000;
+    border-radius: 8px;
+    text-align: center;
+    z-index: 100;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+    animation: descerPopup 0.5s ease-out forwards;
+}
+
+.popup-secreto h3 { margin-top: 0; color: #ff3333; }
+
+@keyframes descerPopup {
+    from { top: -20%; opacity: 0; }
+    to { top: 15%; opacity: 1; }
+}

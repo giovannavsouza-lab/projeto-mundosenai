@@ -63,9 +63,27 @@
 
     <footer>
         <p>Cabbin 17 • Acampamento Meio-Sangue</p>
-        <p class="creditos">Isadora e Giovanna®  </p>
+        <p class="creditos">Isadora e Giovanna® </p>
+           <p class="github">github: giovannavsouza-lab ; isadorafernandaSR.</p>
+         
     </footer>
 
     <script src="js/script.js"></script>
+
+   <!-- Botão no canto superior -->
+<button class="btn-secreto" onclick="ativarEasterEgg()" title="Ester Egg""></button>
+
+<!-- Pop-up -->
+<div id="popup-secreto" class="popup-secreto" style="display: none;">
+    <h3>HOMENS!</h3>
+    <p>Queimem a vila!!!</p>
+    <button class="btn-voltar" onclick="fecharEasterEgg()">Fechar</button>
+</div>
+
+<!-- Áudio do Kratos -->
+<audio id="audio-kratos">
+    <source src="/audio/kratos-homens.mp3" type="audio/mpeg">
+</audio>
+
 </body>
 </html>

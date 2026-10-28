@@ -121,3 +121,18 @@ function escolherDeus(nomeDaSkin, contoId) {
         exibirConto(contoId, botaoCorreto);
     }
 }
+
+function ativarEasterEgg() {
+    document.getElementById("popup-secreto").style.display = "block";
+    
+    const audio = document.getElementById("audio-kratos");
+    audio.currentTime = 0; 
+    audio.play();
+}
+
+function fecharEasterEgg() {
+    document.getElementById("popup-secreto").style.display = "none";
+    
+    const audio = document.getElementById("audio-kratos");
+    audio.pause();
+}
