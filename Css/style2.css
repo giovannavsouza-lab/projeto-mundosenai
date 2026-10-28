@@ -67,8 +67,6 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-
-
 #tela-capa,
 #tela-menu,
 #tela-principal {
@@ -105,12 +103,15 @@ body {
 
 .capa-livro h1 {
     margin: 0;
-    height: 4.7vh;
     display: flex;
+    top: 60% ;
+    font-size:190% ;
+    font-style: italic;
     align-items: center;
     justify-content: center;
-    font-size: clamp(1rem, 2.8vh, 2rem);
+    
 }
+
 
 .capa-livro p {
     margin: 6vh 0 4vh;
@@ -118,8 +119,8 @@ body {
 }
 
 .btn-abrir {
-    background-color: #d4af37;
-    color: #ceebeb;
+    background-color: #8d8a7a;
+    color: #C6C3AB;
     border: none;
     padding: 15px 40px;
     font-size: 1.2rem;
