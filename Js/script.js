@@ -125,6 +125,11 @@ function escolherDeus(nomeDaSkin, contoId) {
 function ativarEasterEgg() {
     document.getElementById("popup-secreto").style.display = "block";
     
+    
+    const video = document.getElementById("gif-kratos");
+    video.currentTime = 0; 
+    video.play();
+
     const audio = document.getElementById("audio-kratos");
     audio.currentTime = 0; 
     audio.play();
@@ -133,6 +138,10 @@ function ativarEasterEgg() {
 function fecharEasterEgg() {
     document.getElementById("popup-secreto").style.display = "none";
     
+   
+    const video = document.getElementById("gif-kratos");
+    video.pause();
+
     const audio = document.getElementById("audio-kratos");
     audio.pause();
 }

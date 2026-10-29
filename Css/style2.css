@@ -190,7 +190,7 @@ body {
     color: var(--texto-principal);
 }
 
-.container header,{
+.container header {
     display:none 
 }
 
@@ -249,7 +249,7 @@ body {
 .btn-conto.active { border-color: var(--btn-texto); font-weight: bold; }
 .btn-conto:focus-visible { outline: 2px solid var(--btn-texto); }
 
-/* caixa pequena, escolha da skins */
+/* escolha da skins */
 .seletor-casas {
     position: absolute;
     left: 85.8%;
@@ -303,7 +303,7 @@ body {
     height: 4.5%;
 }
 
-/* botão X (livro -> capa): fica invisível sobre o X desenhado na imagem */
+/* botão X (livro -> capa) */
 .btn-fechar {
     position: absolute;
     top: 86%;
@@ -344,7 +344,7 @@ footer {
     bottom: 3%;     
     font-size: 50%;
     font-style: italic;
-    pointer-events: auto; /* Permite que o texto seja selecionável, se quiser */
+    pointer-events: auto; 
 }
 
 .github {
@@ -355,7 +355,7 @@ footer {
     bottom: 3%;     
     font-size: 50%;
     font-style: italic;
-    pointer-events: auto; /* Permite que o texto seja selecionável, se quiser */
+    pointer-events: auto;
 }
 
 .btn-secreto {
@@ -397,4 +397,12 @@ footer {
 @keyframes descerPopup {
     from { top: -20%; opacity: 0; }
     to { top: 15%; opacity: 1; }
+}
+
+#gif-kratos {
+    width: 100%;
+    max-width: 300px; /* Limita a largura máxima do GIF */
+    border-radius: 8px; /* Deixa as bordas arredondadas */
+    margin: 10px 0 15px 0; /* Dá um espaço entre o título, a imagem e o botão */
+    display: block; /* Garante que fique em sua própria linha */
 }
