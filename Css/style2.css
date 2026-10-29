@@ -359,7 +359,7 @@ footer {
 }
 
 .btn-secreto {
-    position: absolute;
+    position:fixed;
     top: 10%;
     left: 3%;
     width: 45px;
